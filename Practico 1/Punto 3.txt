@@ -1,0 +1,29 @@
+Tipo de datos primitivos en Java:
+Variable: Es un espacio en la memoria, que puede tener un valor de un tipo. Sujeto a variaciones/modificaciones.
+
+Tipos:
+Enteros: 
+Byte (rango de -127 a 127) valor por defecto 0. 8bit de memoria
+Short (rango -32.768 a 32.767) valor por defecto 0. 16bit de memoria
+Int (rango amplio) valor por defecto 0. 32 bit de memoria
+Long (rango ampio) valor por defecto 0. 64 bit
+
+Decimales:
+Double (64 bit) ocupa más espacio en la memoria
+Float (32 bit)
+
+Carácter:
+Char (almacena caracteres entre comillas simples ‘ ‘)
+
+Boolean:
+Boolean (trabaja con 2 opciones true/false) utilizada en condicionales;
+
+String:
+Cadena o conjunto de caracteres.
+
+Comparación con ADA:
+Si hablamos en comparación con Java, todas las anteriormente mencionadas están ahí, salvo por caso excepcional del double, todo.
+Primitivo quiere decir que solo tienen una única función, solo almacenan datos de un tipo.
+En ADA también definíamos los TAD, los tipos de datos abstractos, (no primitivos), que eran los llamados paquetes que nos permitían crear distintos modelos y más opciones, que nosotros deseábamos que hiciera, tal tipo de dato definido.
+
+Algunos ejemplos: pila, listas, montículo, cola, árbol.
