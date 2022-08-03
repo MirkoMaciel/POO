@@ -1,0 +1,29 @@
+Estucturado vs Orientado a objetos:
+
+(Un paradigma, es un estilo de programar, la forma en la que afrontamos un problema.)
+
+
+Estructurado: 
+-Ejecutamos el código de forma secuencial
+
+-Utilizamos funciones y estructuras simples e iterativas de la misma manera
+
+-Parte todo desde un "main" ( principal ) que empieza al llamar a las funciones de maneras descendente o en orden.
+
+-Si bien se pueden resolver problemas a gran escala, la OO sirve mejor para ello.
+
+-Tiene un efoque top-down: quiere decir, existe un enfoque “descendente”, por el cual se desarrollan las actividades, por niveles de gerencia, los de más alto rango comunican el tipo de acción al equipo para el desarrollo de procesos.
+
+
+Orientado a objetos:
+
+En objetos, tenemos que el programa se divide en objetos con énfasis en abstracción de datos.
+
+-Tiene un enfoque Bottom-up, es decir que el equipo de trabajo, colabora en todos los niveles, para llegar al objetivo a cumplir.
+
+-Permite Herencia, que es reutilización de código:
+Es un método primario, que te permite la reutilización de código, de una clase poder “heredar” los atributos y métodos de la misma a otra clase (inferior).
+Clase principal/padre -> Hereda -> Clase Hija/inferior.
+
+-Permite encapsulamiento, que es guardar, proteger o limitar el acceso de ciertos atributos y/o propiedades en nuestro prototipo y objeto. (Para no permitir una alteración).
+-Mejor para programas grandes
