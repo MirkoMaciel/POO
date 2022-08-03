@@ -1,0 +1,42 @@
+Estructuras de control:
+
+Case: (Multiple)
+Esta estructura, nos permite tener varias opciones disponibles para realizar, dependiendo el valor que ingrese.
+Toma una variable, de un "x" tipo y espera un resultado de la misma. En base al valor que ingrese, tomará un camino o no, dentro de nuestro case.
+Es una estructura, que nos permite tenes distintas opciones y caminos, para tomar.
+
+
+Control simple:
+
+if ("SI" estructura que evalua una condición)
+ En el caso de que esta condición de verdadero, recorre/ingresa a realizar lo que este dentro de los corchetes, realiza el código en si.
+En java marcado con corchetes en  ada con un "comienza" posterior a un "fin"
+
+
+if ("Si" estructura que evalua una condición)
+else
+
+La particularidad de este if, es que en el caso de ser falsa la condición, y no ingrese al if principal, se redigire al else y ejecuta todo el código que este aqui.
+En el if común directamente al ser falsa la condición, no entra al if, en este caso tampoco lo hace pero se redirige al "else" que nos permite ejecturar otra porción de código que generalmente es opuesta a lo que iria en el if principal.
+
+
+Iterativas:
+
+repetir (loop) Se repite en un bucle, hasta que choque con una condición
+En este caso, la evaluación de la condición se realiza al final de la ejecución del código, osea que mínimo esta estructura se ejecutara 1 vez.
+Luego en base a lo que se encuentra, se repetira tantas "n" veces hasta que la condición de fin sea true.
+
+Se usa cuando no se sabe, cuantas veces debo iterar.
+
+
+mientras (while) Se repite en un bucle, evaluando la condición al principio
+En este caso, el mientras, realiza la misma acción que un repetir, mientras la condición de inicio sea verdadera, el mientras no hará un "break" o saldrá. Pero la particularidad que tiene este, es que al evaluar al inicio la condición de la estructura, puede que esta nunca llege a ejecutarse.
+
+Se utiliza cuando no se sabe, cuantas veces debo iterar.
+
+para (for)
+
+Esta estructura, tambien iterativa, pero ya se maneja con conocimiento de cuantas veces tengo que iterar o deberia. En este caso se parte no de un condicional, si no de una variable local que toma un valor, generalmente 0 o 1. Esta se incrementaria, de en 1 en 1 o más, hasta llegar a la condición de fin, que en este caso es un valor "constante".
+No como tal, pero es un valor ya definido.
+
+
