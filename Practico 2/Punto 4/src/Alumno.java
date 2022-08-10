@@ -13,7 +13,18 @@ public class Alumno {
 		this.dni = dni;
 	}
 
+	public Alumno (String nombre , String apellido) { //Super posicion de clases 
+		//Constructor 2
+	}
+	
+	public Alumno () { //Super posicion de clases
+		
+	}
 	//getters and setters de los atributos.
+	
+	public String getNombreYApellido () {
+		return nombre + apellido;
+	}
 	
 	public String getNombre() { 
 		return nombre;
