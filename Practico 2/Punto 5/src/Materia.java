@@ -25,6 +25,14 @@ public class Materia {
 		this.codigo = codigo;
 	}
 
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Materia [nombre=" + nombre + ", codigo=" + codigo + "]";
+	}
+
 	public void imprimirDatos () {
 		System.out.println("Materias: ");
 		System.out.println(nombre+""+codigo);
