@@ -25,6 +25,7 @@ public class Main {
 		
 		profesores.add(profesor1);
 		
+		
 		Profesor profesor2 = new Profesor("Romina", "Alvarez" , materias);
 		
 		profesor2.añadirMateria(introduccion);
@@ -33,21 +34,22 @@ public class Main {
 		
 		profesores.add(profesor2);
 		
+		
 		Profesor profesor3 = new Profesor("Laura", "Perez" , materias);
 		
 		profesores.add(profesor3);
 		
-		for (int i=0;i<profesores.size();i++) {
+		
+		for (int i=0; i<profesores.size(); i++) {
 			
-		System.out.println("Profesor: " + profesores.get(i).getNombre() + " " +
-		profesores.get(i).getApellido());
-		System.out.println("Materias: ");
-		
-		for (int i=0; i<profesores.get(i).getMaterias().size(); i++) {
-			profesores.imprimirDatos();
-		}
-		
-		}
+		System.out.println("Profesor: " + profesores.get(i).getApellido() + " " + profesores.get(i).getNombre());
+		//	profesores.get(i).toString();
+			
+		/*	for (int j=0; j<profesores.get(j).getMaterias().size(); j++) {
+				System.out.println("Materias: ");
+				materias.get(j).imprimirDatos();		
+				break;
+			} */
 		
 	}
 		
@@ -57,4 +59,3 @@ public class Main {
 		
 	}
 
-}
