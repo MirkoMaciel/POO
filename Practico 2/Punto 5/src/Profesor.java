@@ -41,4 +41,15 @@ public class Profesor {
 	public void añadirMateria(Materia materia) {
 		this.materias.add(materia);
 	}
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Profesor: "+apellido+ " " +nombre;
+	}
+
+	public void imprimirDatos() {
+		System.out.print(this.toString());
+	}
 }

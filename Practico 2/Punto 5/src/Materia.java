@@ -26,8 +26,8 @@ public class Materia {
 	}
 
 	public void imprimirDatos () {
-		System.out.println(this.nombre);
-		System.out.println(this.codigo);
+		System.out.println("Materias: ");
+		System.out.println(nombre+""+codigo);
 	}
 
 }
