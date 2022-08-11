@@ -38,7 +38,7 @@ public class Profesor {
 		this.materias = materias;
 	}
 	
-	public void añadirMateria(Materia materia) {
+	public void aÃ±adirMateria(Materia materia) {
 		this.materias.add(materia);
 	}
 	

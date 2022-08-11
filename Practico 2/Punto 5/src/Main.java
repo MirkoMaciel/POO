@@ -19,18 +19,18 @@ public class Main {
 		
 		Profesor profesor1 = new Profesor("Pedro", "Hernandez"  ); //Poner el parametro
 		
-		profesor1.añadirMateria(poo);
+		profesor1.aÃ±adirMateria(poo);
 		
-		profesor1.añadirMateria(algebra);
+		profesor1.aÃ±adirMateria(algebra);
 		
 		profesores.add(profesor1);
 		
 		
 		Profesor profesor2 = new Profesor("Romina", "Alvarez" );
 		
-		profesor2.añadirMateria(introduccion);
+		profesor2.aÃ±adirMateria(introduccion);
 		
-		profesor2.añadirMateria(algoritmica);
+		profesor2.aÃ±adirMateria(algoritmica);
 		
 		profesores.add(profesor2);
 		
@@ -38,18 +38,7 @@ public class Main {
 		Profesor profesor3 = new Profesor("Laura", "Perez");
 		
 		profesores.add(profesor3);
-		
-		
-//		for (int i=0; i<profesores.size(); i++) {
-//			
-//		System.out.println("Profesor: " + profesores.get(i).getApellido() + " " + profesores.get(i).getNombre());
-//			profesores.get(i).toString();
-//			
-//			 for (int j=0; j<profesores.get(j).getMaterias().size(); j++) {
-//				//System.out.println("Materias: ");
-//				materias.get(j).imprimirDatos();				
-//			}  	
-//	} 
+			
 	
 		for (int j=0; j<profesores.size(); j++) {
 			System.out.println("Profesor: " + profesores.get(j).getNombre() + " " +
@@ -58,12 +47,6 @@ public class Main {
 			
 			for (int i=0; i<profesores.get(j).getMaterias().size();i++) {
 			System.out.println(profesores.get(j).getMaterias().get(i).getNombre());
-		
-		//System.out.println("Materias: " + materias.get(1).getNombre() + " " + profesores.get(1).getCodigo());	
-
-		/* materias.get(0).imprimirDatos();
-		materias.get(1).imprimirDatos(); 
-		materias.get(4).imprimirDatos(); */
 }
 		
 	}
