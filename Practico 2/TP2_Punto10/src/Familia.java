@@ -77,8 +77,8 @@ public class Familia {
 		System.out.print("Apellido "); persona.setApellido(persona.getApellido());
 		System.out.print("Edad "); persona.setEdad(persona.getEdad());
 		System.out.print("Sexo "); persona.setSexo(persona.getSexo());
-		System.out.print("Estudio "); persona.setEstudio(persona.getEstudio());
-		System.out.print("Trabajo "); persona.setTrabajo(persona.getTrabajo());
+		//System.out.print("Estudio "); persona.setEstudio(persona.getEstudio());
+		//System.out.print("Trabajo "); persona.setTrabajo(persona.getTrabajo());
 
 	}
 	
@@ -86,4 +86,15 @@ public class Familia {
 		generadorIntegrante(persona);
 		this.integrante.add(persona);	
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Familia [integrante=" + integrante + ", cantidadFamilias=" + cantidadFamilias + ", cantidadIntegrantes="
+				+ cantidadIntegrantes + ", cantidadPersonas=" + cantidadPersonas + ", promedioEdad=" + promedioEdad
+				+ "]";
+	}
+	
+	
 }

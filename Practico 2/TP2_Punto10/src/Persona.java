@@ -20,6 +20,13 @@ public class Persona {
 		this.estudio = estudio;
 		this.trabajo = trabajo;
 	}
+	
+	
+	public Persona() {
+		super();
+	}
+
+
 
 	public String getNombre() {
 		return nombre;
@@ -62,7 +69,6 @@ public class Persona {
 	}
 
 	public void setEstudio(Boolean estudio) {
-		estudio = in.nextBoolean();
 		this.estudio = estudio;
 	}
 
@@ -71,9 +77,17 @@ public class Persona {
 	}
 
 	public void setTrabajo(Boolean trabajo) {
-		estudio = in.nextBoolean();
 		this.trabajo = trabajo;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo=" + sexo
+				+ ", estudio=" + estudio + ", trabajo=" + trabajo + "]";
+	}
+	
+	
 	
 	
 
