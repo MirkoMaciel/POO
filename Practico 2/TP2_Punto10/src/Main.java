@@ -6,8 +6,12 @@ public class Main {
 		
 		
 		Familia f = new Familia();
+		
 		ArrayList<Familia> grupoFamiliar = new ArrayList<Familia>();
-		grupoFamiliar.add(f);
+		
+		f.generadorFamilia();
+		
+		//grupoFamiliar.add(f);
 		
 //		System.out.println("-CENSO INICIAL-");
 //		grupoFamiliar.add();

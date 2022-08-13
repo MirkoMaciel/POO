@@ -21,6 +21,13 @@ public class Familia {
 	}
 		
 	
+	
+	public Familia() {
+		super();
+	}
+
+
+
 	public ArrayList<Persona> getIntegrante() {
 		return integrante;
 	}
