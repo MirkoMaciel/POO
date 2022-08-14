@@ -1,16 +1,15 @@
-import java.util.ArrayList;
 
-//import java.util.ArrayList;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-		Persona p = new Persona();
-		Familia f = new Familia();
+	
+		CensoD cens = new CensoD();
+		cens.censoHogares();
+		//cens.pruebaCal();
+		//System.out.println("fin");
+		//System.out.println(familias);
+		System.out.println(cens.fami.toString());
 		
-		ArrayList<Familia> grupoFamiliar = new ArrayList<Familia>();
-
 	}
 }
-

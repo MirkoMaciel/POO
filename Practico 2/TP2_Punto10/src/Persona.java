@@ -4,19 +4,17 @@ public class Persona {
 
 	private String nombre;
 	private String apellido;
-	private String edad;
-	private String sexo;
+	private Integer edad;
 	private Boolean estudio;
 	private Boolean trabajo;
 	Scanner in = new Scanner(System.in);
 	
-	public Persona (String nombre , String apellido , String edad , String sexo ,
+	public Persona (String nombre , String apellido , Integer edad , String sexo ,
 			Boolean estudio , Boolean trabajo) {
 		
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
-		this.sexo = sexo;
 		this.estudio = estudio;
 		this.trabajo = trabajo;
 	}
@@ -46,22 +44,13 @@ public class Persona {
 		this.apellido = apellido;
 	}
 
-	public String getEdad() {
+	public Integer getEdad() {
 		return edad;
 	}
 
-	public void setEdad(String edad) {
-		edad = in.nextLine();
+	public void setEdad(Integer edad) {
+		edad = in.nextInt();
 		this.edad = edad;
-	}
-
-	public String getSexo() {
-		return sexo;
-	}
-
-	public void setSexo(String sexo) {
-		sexo= in.nextLine();
-		this.sexo = sexo;
 	}
 
 	public Boolean getEstudio() {
@@ -83,7 +72,7 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo=" + sexo
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad 
 				+ ", estudio=" + estudio + ", trabajo=" + trabajo + "]";
 	}
 	
