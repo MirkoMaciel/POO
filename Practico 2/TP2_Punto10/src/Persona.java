@@ -19,12 +19,9 @@ public class Persona {
 		this.trabajo = trabajo;
 	}
 	
-	
 	public Persona() {
 		super();
 	}
-
-
 
 	public String getNombre() {
 		return nombre;

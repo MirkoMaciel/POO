@@ -19,20 +19,41 @@ public class CensoD {
 	
 	
 	public void censoHogares () {
+		Familia familia1 = new Familia();
+		Persona persona1 = new Persona();
+		persona1.setNombre("Kevin");
+		
+		
+		
+		
+		familia1.addIntegrante(persona1);
+		
+		familia1.getIntegrante().add(persona1);
+		
+		familia1.getIntegrante().get(0).getApellido();
+		
+		int edadTotal=0;
+		for(int i=0; i<familia1.getIntegrante().size();i++) {
+			edadTotal+= familia1.getIntegrante().get(i).getEdad();
+		}
+		edadTotal / familia1.getIntegrante().size();
+		
+		familias.add(familia1);
+		
+		
+		
 		Character rta = 'S';	
 		Scanner in= new Scanner(System.in);
 		do {
-			
+			int i = 1;
 			do { //Primer iterativo para el integrante
-				int i = 1;
 				System.out.println("Integrante: "+i);
 				fami.generadorFamilia(p);
-				familias.add(fami);
-				System.out.println("Desea ingresar otro integrante a la familia?S/N");
+				System.out.println("Desea ingresar otro integrante a la familia? S/N");
 				rta = in.next().toUpperCase().charAt(0);
 				i++;
 			} while (rta == 'S');
-				//fami.cantidadIntegrantes = familias.size(); //Aca mando el largo de arreglo
+				i=0;
 				familias.add(fami);		
 				System.out.println("Desea agregar otra familia?S/N");
 				rta = in.next().toUpperCase().charAt(0);
@@ -49,14 +70,12 @@ public class CensoD {
 		}
 	}
 
-
 	public void calculoEdades() {
 		for (int j= 0 ; j<persona.size(); j ++) { //Recorro el arreglo de personas dentro 1 fam
 			totalidadEdad = totalidadEdad + p.getEdad(); //Recupero su edad y la sumo
 		}
 		promedioEdad = totalidadEdad + totalidadIntegrantes; //Promedio de edad de todo los censados
 	}
-	
 	
 	
 	public void calculoEmpleados () {
