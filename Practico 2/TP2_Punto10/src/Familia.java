@@ -57,7 +57,7 @@ public class Familia {
 		this.promedioEdad = promedioEdad;
 	}
 
-	public void generadorIntegrante(Persona integrante) { //Genera la una persona
+	public void addtegrante(Persona integrante) { //Genera la una persona
 		this.integrante.add(integrante);
 
 	}
