@@ -1,6 +1,6 @@
 
 public class Puesto {
-	String nombre;
+	String nombre; //Atributo
 
 	public Puesto(String nombre) {
 		super();

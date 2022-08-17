@@ -19,6 +19,8 @@ public class Main {
 		System.out.println("-Empresa-");
 		empresa.setNombre("Mirkos company");
 		empresa.setDireccion("Km3 - Foyel 61 \n\n");
+		System.out.println(empresa.getNombre());
+		System.out.println(empresa.getDireccion());
 		empleados.add(p1);
 		empleados.add(p2);
 		empleados.add(p3);
