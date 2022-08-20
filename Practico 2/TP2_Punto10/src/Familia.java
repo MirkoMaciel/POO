@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 
 public class Familia {
@@ -57,36 +57,10 @@ public class Familia {
 		this.promedioEdad = promedioEdad;
 	}
 
-	public void addtegrante(Persona integrante) { //Genera la una persona
+	public void addtegrante(Persona integrante) { 
 		this.integrante.add(integrante);
-
 	}
 	
-	public void preguntasS(Persona integrante) {
-		Scanner in= new Scanner (System.in);
-		Character rta;
-		System.out.print("Estudio? S/N "); 
-		rta = in.next().toUpperCase().charAt(0);
-		
-		if (rta == 'S') {
-			integrante.setEstudio(true);
-		}else if(rta == 'N') {  integrante.setEstudio(false);
-		}
-		
-		System.out.println("Trabajo? S/N"); 
-		rta = in.next().toUpperCase().charAt(0);
-		if (rta == 'S') {
-			integrante.setTrabajo(true);
-		}else if (rta == 'N') {integrante.setTrabajo(false);
-		}
-		
-	}
-	
-	public void generadorFamilia (Persona integrante) {
-		generadorIntegrante(integrante);
-		preguntasS(integrante);
-		this.integrante.add(integrante);	
-	}
 
 
 	@Override

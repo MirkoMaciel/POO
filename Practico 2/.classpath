@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="TP_Punto12/src"/>
+	<classpathentry kind="src" path="TP2_Punto 11/src"/>
+	<classpathentry kind="src" path="TP2_Punto 3/src"/>
+	<classpathentry kind="src" path="TP2_Punto 4/src"/>
+	<classpathentry kind="src" path="TP2_Punto 5/src"/>
+	<classpathentry kind="src" path="TP2_Punto 6/src"/>
+	<classpathentry kind="src" path="TP2_Punto 8/src"/>
+	<classpathentry kind="src" path="TP2_Punto10/src"/>
+	<classpathentry kind="src" path="TP2_Punto13/src"/>
+	<classpathentry kind="src" path="TP2_Punto14/src"/>
+	<classpathentry kind="src" path="TP2_Punto9/src"/>
+	<classpathentry kind="output" path="TP2_Punto 11/bin"/>
+</classpath>

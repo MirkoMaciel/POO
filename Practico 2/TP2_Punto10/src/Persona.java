@@ -9,7 +9,7 @@ public class Persona {
 	private Boolean trabajo;
 	Scanner in = new Scanner(System.in);
 	
-	public Persona (String nombre , String apellido , Integer edad , String sexo ,
+	public Persona (String nombre , String apellido , Integer edad,
 			Boolean estudio , Boolean trabajo) {
 		
 		this.nombre = nombre;
@@ -28,7 +28,7 @@ public class Persona {
 	}
 
 	public void setNombre(String nombre) {
-		nombre = in.nextLine();
+
 		this.nombre = nombre;
 	}
 
@@ -37,7 +37,7 @@ public class Persona {
 	}
 
 	public void setApellido(String apellido) {
-		apellido = in.nextLine();
+
 		this.apellido = apellido;
 	}
 
@@ -46,7 +46,7 @@ public class Persona {
 	}
 
 	public void setEdad(Integer edad) {
-		edad = in.nextInt();
+
 		this.edad = edad;
 	}
 

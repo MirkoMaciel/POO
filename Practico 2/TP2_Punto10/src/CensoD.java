@@ -1,105 +1,84 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 
 public class CensoD {
 
-	Integer totalidadFamilias = 0; //Total familias censadas
-	Integer totalidadIntegrantes= 0; //Integrantes en total censado
-	Integer totalidadEdad = 0; //Totalidad de edad de todas las personas
+	Integer totalidadFamilias = 0; // Total familias censadas
+	Integer totalidadIntegrantes = 0; // Integrantes en total censado
+	Integer totalidadEdad = 0; // Totalidad de edad de todas las personas
 	Integer totalidadEmpleados;
-	Integer promedioEdad ;
-	
-	Persona p = new Persona();
-	Familia fami = new Familia();
-	
+	Integer promedioEdad = 0;
+
 	ArrayList<Familia> familias = new ArrayList<Familia>();
 	ArrayList<Persona> persona = new ArrayList<Persona>();
-	
-	
-	
-	public void censoHogares () {
+
+	public void censoHogares() {
+
 		Familia familia1 = new Familia();
-		Persona persona1 = new Persona();
-		persona1.setNombre("Kevin");
-		
-		
-		
-		
-		familia1.addIntegrante(persona1);
-		
-		familia1.getIntegrante().add(persona1);
-		
-		familia1.getIntegrante().get(0).getApellido();
-		
-		int edadTotal=0;
-		for(int i=0; i<familia1.getIntegrante().size();i++) {
-			edadTotal+= familia1.getIntegrante().get(i).getEdad();
-		}
-		edadTotal / familia1.getIntegrante().size();
-		
+		Familia familia2 = new Familia();
+		Familia familia3 = new Familia();
+
+		Persona p1 = new Persona("Mirko", "Maciel", 21, true, true);
+		Persona p2 = new Persona("Santino", "Borda", 11, true, false);
+		Persona p3 = new Persona("Claudia ", "Casas", 49, false, true);
+		Persona p4 = new Persona("Jorge", "Borda", 42, false, true);
+		Persona p5 = new Persona("Pepe", "Perez", 5, false, false);
+		Persona p6 = new Persona("Blass", "Rodriguez", 17, false, false);
+
+		familia1.addtegrante(p1);
+		familia1.addtegrante(p2);
+		familia1.addtegrante(p3);
+
+		familia2.addtegrante(p4);
+		familia2.addtegrante(p5);
+
+		familia3.addtegrante(p6);
+
 		familias.add(familia1);
-		
-		
-		
-		Character rta = 'S';	
-		Scanner in= new Scanner(System.in);
-		do {
-			int i = 1;
-			do { //Primer iterativo para el integrante
-				System.out.println("Integrante: "+i);
-				fami.generadorFamilia(p);
-				System.out.println("Desea ingresar otro integrante a la familia? S/N");
-				rta = in.next().toUpperCase().charAt(0);
-				i++;
-			} while (rta == 'S');
-				i=0;
-				familias.add(fami);		
-				System.out.println("Desea agregar otra familia?S/N");
-				rta = in.next().toUpperCase().charAt(0);
-			}while(rta == 'S');					
+		familias.add(familia2);
+		familias.add(familia3);
 	}
 
-	public void calculoFamilias() {
-		System.out.println(familias.size());
-	}
-	
-	public void calculoIntegrantes () {
-		for (int i = 0 ; i<familias.size() ; i++) { 
-		totalidadIntegrantes = totalidadIntegrantes + fami.getCantidadIntegrantes();
+	public void cantidadIntegrantes() {
+		for (int i = 0; i < familias.size(); i++) {
+			for (int j = 0; j < familias.get(i).getIntegrante().size(); j++) {
+				totalidadIntegrantes++;
+			}
 		}
 	}
 
-	public void calculoEdades() {
-		for (int j= 0 ; j<persona.size(); j ++) { //Recorro el arreglo de personas dentro 1 fam
-			totalidadEdad = totalidadEdad + p.getEdad(); //Recupero su edad y la sumo
-		}
-		promedioEdad = totalidadEdad + totalidadIntegrantes; //Promedio de edad de todo los censados
+	public void cantidadFamilias() {
+		totalidadFamilias = familias.size();
 	}
-	
-	
-	public void calculoEmpleados () {
-	for (int x = 0 ; x<familias.size() ; x++) { //Recorro el arreglo de familias
-		for (int j= 0 ; j<persona.size(); j ++) { //Recorro el arreglo de personas dentro 1 fam
-			if (p.getTrabajo() == true) {
-				totalidadEmpleados = totalidadEmpleados++;; //Recupero quien trabajo y quien no
-				}
-			}	
+
+	public void promedioEdades() {
+		for (int i = 0; i < familias.size(); i++) {
+			for (int j = 0; j < familias.get(i).getIntegrante().size(); j++) {
+				promedioEdad = promedioEdad + familias.get(j).integrante.get(j).getEdad();
+			}
 		}
 	}
 
-
-	public void pruebaCal () {
-		calculoFamilias();
-		System.out.println("Total familias: "+totalidadFamilias);
-		calculoIntegrantes();
-		System.out.println("Total integrantes: "+totalidadIntegrantes);
-		calculoEdades();
-		System.out.println("Promedio edades: "+promedioEdad);
-		calculoEmpleados();
-		System.out.println("Personas activas laboralmente: "+totalidadEmpleados);
+	public void personaLaboralActiva() {
+		for (int i = 0; i < familias.size(); i++) {
+			for (int j = 0; j < familias.get(i).getIntegrante().size(); j++) {
+				if (familias.get(j).integrante.get(j).getTrabajo() == true)
+					;
+				totalidadEmpleados++;
+			}
+		}
 	}
-	
+
+	public void imprimirResultado() {
+		cantidadIntegrantes();
+		cantidadFamilias();
+		promedioEdades();
+		personaLaboralActiva();
+		System.out.println("Personas censadas: "+totalidadIntegrantes+"\n");
+		System.out.println("Familias Censadas: "+totalidadFamilias+"\n");
+		System.out.println("Promedio edades: "+promedioEdad+"\n");
+		System.out.println("Persona activa laboralmente: "+totalidadEmpleados+"\n");
+	}
 	
 }
 
