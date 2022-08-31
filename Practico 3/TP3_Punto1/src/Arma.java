@@ -1,23 +1,43 @@
 
-public abstract class Arma {
+public abstract class Arma { /*
+								 * No se puede crear un objeto de esta clase por ser abstract
+								 */
 	private String nombre;
-	private Double peso;
+	private Double Ancho, largo;
 
-	public Arma() {
+	public Arma() { // Constructor: metodo que se ejecuta cuando se crea el objeto
 		super();
-		System.out.println("Esto es un arma. ");
 	}
-	
-	public Arma (String nombre) {
-		System.out.println("El nombre es: "+ this.nombre);
+
+	public String getNombre() {
+		return nombre;
 	}
-	
-	public Arma(Double peso) {
-		System.out.println("El peso es: "+peso);
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
-	
-	public abstract void dispara ();
-	
+
+	public Double getAncho() {
+		return Ancho;
+	}
+
+	public void setAncho(Double ancho) {
+		Ancho = ancho;
+	}
+
+	public Double getLargo() {
+		return largo;
+	}
+
+	public void setLargo(Double largo) {
+		this.largo = largo;
+	}
+
+	@Override
+	public String toString() {
+		return "Nombre del arma: " + nombre + " | Ancho: " + Ancho + "| Largo: " + largo;
+	}
+
 	
 	
 }
