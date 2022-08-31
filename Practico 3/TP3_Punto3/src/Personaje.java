@@ -24,6 +24,8 @@ public abstract class Personaje {
 	
 	public abstract Integer defender(Integer puntos); //No Implentado, asigno a los hijos
 
+	public abstract void defenderPrueba(Integer puntos);
+	
 	public Integer getVida() {
 		return vida;
 	}
