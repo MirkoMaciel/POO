@@ -1,0 +1,39 @@
+Interfaces: 
+
+Permite declarar un conjunto de constantes y métodos abstractos, que se van a poder implementar en varias clases (aquellas que las constituyan).
+Especifica el comportamiento común que tiene un conjunto de clases.
+
+Palabra reservada: implements
+
+Sintaxis: class nombreClase implements nombreInterfaz
+
+Ejemplo: Interfaz Barco
+
+metodo alarma, mensajeSocorro.
+
+Clases: BarcoPasaje, PortaAvion y Pesquero (implementan la interfaz "Barco")
+
+
+Dichas clases podran definir sus propios metodos "exclusivos" o "interiores" y podran hacer uso de los metodos que "hereda" de la interfaz "Barco".
+
+Ejemplo: 
+
+BarcoPasaje:
+
+public void alarma () {
+
+Syso("ALARMA DE BARCO PASAJERO");
+
+}
+
+public void mensajeSocorro() {
+syso("ESTE MENSAJE VIENE DEL BARCO DE PASAJEROS - AYUDA ");
+
+}
+
+
+
+Es mejor generar una interfaz lo más generica posible, ya que será, la especificación base o común de una o varias clases.
+Vendrian a ser los metodos y atributos, más comunes que se pueden abstraer de un conjunto de objetos o de uno en si. A partir de ellas, tenemos como base que en todas las clases que implementen una misma interfaz, tengan la particularidad de que todo lo declarado en la interfaz, sea común a ellas.
+
+Y dentro de cada clase se puede hacer una especificación mucho más directa, teniendo como base la interfaz. Pudiendo así, separar propiedades que si se declaran en la interfaz, generarian problemas o redundancia.
