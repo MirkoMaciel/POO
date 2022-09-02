@@ -16,7 +16,7 @@ public class Main {
 		System.out.println("Vida ninja: "+kakashi.getVida());
 		System.out.println("Escudo ninja: "+kakashi.getNivelDefensa());
 		
-		System.out.println(kakashi.atacar());
+		//System.out.println(kakashi.atacar());
 	}
 
 }

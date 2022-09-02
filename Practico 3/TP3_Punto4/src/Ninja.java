@@ -24,7 +24,7 @@ public class Ninja extends Personaje {
 		}else this.setVida(this.getVida() - puntos);
 		
 		if (this.getVida() <= puntos) {	
-			System.out.println("el ataque te mató");
+			System.out.println("ninja moriste");
 			this.setVida(0);
 		}
 		return this.getVida();
