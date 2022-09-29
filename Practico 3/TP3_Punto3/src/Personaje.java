@@ -6,12 +6,13 @@ public abstract class Personaje {
 	private Integer nivelDefensa;
 	
 	
-	public Personaje() {
+	public Personaje() { //Constructor
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Personaje(Integer vida, Integer nivelAtaque, Integer nivelDefensa) {
+	public Personaje(Integer vida, Integer nivelAtaque, Integer nivelDefensa) { //COnstructor
+
 		super();
 		this.vida = vida;
 		this.nivelAtaque = nivelAtaque;

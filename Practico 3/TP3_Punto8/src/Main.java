@@ -17,7 +17,7 @@ public class Main {
 		for (int i = 0; i < titulares.size(); i++) {
 				System.out.println("Nombre y apellido: " + titulares.get(i).getNombre() + " " +
 				titulares.get(i).getApellido());
-				System.out.println("¿Es titular?: Sí");
+				System.out.println(" ¿Es titular?: Sí");
 				System.out.println("Remuneración:" +
 						titulares.get(i).getRemuneracionMensual());
 		}
@@ -25,7 +25,7 @@ public class Main {
 		for (int i = 0; i < suplentes.size(); i++) {
 			System.out.println("Nombre y apellido: " + suplentes.get(i).getNombre() + " " +
 					suplentes.get(i).getApellido());
-			System.out.println("¿Es titular?: No");
+			System.out.println(" ¿Es titular?: No");
 			System.out.println("Remuneración:" +
 					suplentes.get(i).getRemuneracionMensual());
 			}
