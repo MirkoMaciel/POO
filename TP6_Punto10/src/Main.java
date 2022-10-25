@@ -13,6 +13,8 @@ public class Main {
 		sm.agregar(r3);
 		
 		sm.setClima("Soleado");
+
+		
 		
 		//sm.obs.get(1).update();
 		
