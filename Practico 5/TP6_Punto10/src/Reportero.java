@@ -25,7 +25,7 @@ public class Reportero implements Observer {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return super.toString()+nombre;
+		return nombre;
 	}
 
 	
