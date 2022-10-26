@@ -11,7 +11,7 @@ public class Reportero implements Observer {
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		System.out.println("El clima se modifico" );
+		System.out.println("El clima se modifico");
 	}
 
 	public String getNombre() {
